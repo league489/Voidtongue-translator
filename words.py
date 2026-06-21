@@ -1,5 +1,5 @@
 import json
-import streamlit as st
+
 known_words = {
 "Lohk": {"meanings":["void"],"certainty_of_translation":"full","source_of_translation":"in_game_official","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "Lohk", "is_generated": False,"plural_form":"", "notes":""},
 "Bok": {"meanings":["service","servitude","slave(?)"],"certainty_of_translation":"high","source_of_translation":"wiki official","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "Bok", "is_generated": False,"plural_form":"", "notes":"'Slave' meaning is not confirmed"},
@@ -29,7 +29,7 @@ known_words = {
 "Shotarat": {"meanings":["overlord","master"],"certainty_of_translation":"high","source_of_translation":"wiki official","part_of_speech_tags": ["adjective","noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Sho-","Tarat"], "compound_rule": "prefix + base","base_word": "Tarat",  "is_generated": False,"plural_form":"", "notes":""},
 "Tarat": {"meanings":["lord","ruler"],"certainty_of_translation":"medium","source_of_translation":"user_defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "Tarat",  "is_generated": False,"plural_form":"", "notes":"Extracted from shotarat - as lord is lesser then overlord/master, I belive it makes sense"},
 "Kalohk": {"meanings":["material world","world of dust"],"certainty_of_translation":"high","source_of_translation":"wiki official","part_of_speech_tags": ["noun","adjective"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Lohk"], "compound_rule": "prefix + base","base_word": "Lohk",  "is_generated": False,"plural_form":"", "notes":""},
-"Shoranac": {"meanings":["Fill fiercely"],"certainty_of_translation":"high","source_of_translation":"wiki official","part_of_speech_tags": ["noun","adverb"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Sho-","Ranac"], "compound_rule": "prefix + base","base_word": "Ranac",  "is_generated": False,"plural_form":"", "notes":""},
+"Shoranac": {"meanings":["fill fiercely"],"certainty_of_translation":"high","source_of_translation":"wiki official","part_of_speech_tags": ["noun","adverb"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Sho-","Ranac"], "compound_rule": "prefix + base","base_word": "Ranac",  "is_generated": False,"plural_form":"", "notes":""},
 "Githli": {"meanings":["welcome","greeting"],"certainty_of_translation":"medium","source_of_translation":"wiki official","part_of_speech_tags": ["noun","adjective","verb"],"default_part_of_speech": "ambiguous","is_compound": True, "compound_components": ["Gith","-li"], "compound_rule": "base + suffix","base_word": "Gith",  "is_generated": False,"plural_form":"", "notes":"Both suffix and base meanings are unknown , thus compound translation is questionable"},
 "Uukareh": {"meanings":["eternal union","together forever"],"certainty_of_translation":"high","source_of_translation":"wiki official","part_of_speech_tags": ["noun","adjective"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Uu-","Ka-","Reh"], "compound_rule": "prefix + prefix + base","base_word": "Reh",  "is_generated": False,"plural_form":"", "notes":""},
 "Shogrikh": {"meanings":["great strength(?)","stronger","stronger still"],"certainty_of_translation":"high","source_of_translation":"wiki official","part_of_speech_tags": ["noun","adjective"],"default_part_of_speech": "ambiguous","is_compound": True, "compound_components": ["Sho-","Grikh"], "compound_rule": "prefix + base","base_word": "Grikh",  "is_generated": False,"plural_form":"", "notes":"'Great strength' meaning has been added by me , it is not listed in wiki, but as 'strength' is one of 'Grikh' meaning, I found it important to add it."},
@@ -46,8 +46,18 @@ known_words = {
 "Kaxata": {"meanings":["lie"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": [],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Xata"], "compound_rule": "prefix + base","base_word": "Xata",  "is_generated": False,"plural_form":"", "notes":""},
 "Kaozun": {"meanings":["monolith","integrity"],"certainty_of_translation":"low","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": [], "compound_rule": "prefix + base","base_word": "Ozun",  "is_generated": False,"plural_form":"", "notes":"I have trouble with defining inversion/oppositon of dust, that is the most reasonable proposal i came up with"},
 "Kareh": {"meanings":["united","together","union"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["adjective","noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Reh"], "compound_rule": "prefix + base","base_word": "Reh",  "is_generated": False,"plural_form":"", "notes":""},
-
-
+"Kajahu": {"meanings":["shapelessness","formlessness"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Jahu"], "compound_rule": "prefix + base","base_word": "Jahu",  "is_generated": False,"plural_form":"", "notes":"Propably not very useful... but reasonable"},
+"Kayara": {"meanings":["look away"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb","adverb"],"default_part_of_speech": "ambiguous","is_compound": True, "compound_components": ["Ka-","Yara"], "compound_rule": "prefix + base","base_word": "Yara",  "is_generated": False,"plural_form":"", "notes":""}, 
+"Kamahk": {"meanings":["unsee","ignore"],"certainty_of_translation":"low","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Mahk"], "compound_rule": "prefix + base","base_word": "Mahk",  "is_generated": False,"plural_form":"", "notes":""},
+"Kaukul": {"meanings":["interior","center"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Ukul"], "compound_rule": "prefix + base","base_word": "Ukul",  "is_generated": False,"plural_form":"", "notes":""},
+"Katarat": {"meanings":["subject","servant"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Tarat"], "compound_rule": "prefix + base","base_word": "Tarat",  "is_generated": False,"plural_form":"", "notes":""},
+"Karanac": {"meanings":["depleted","empty"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["adjective"],"default_part_of_speech": "adjective","is_compound": True, "compound_components": ["Ka-","Ranac"], "compound_rule": "prefix + base","base_word": "Ranac",  "is_generated": False,"plural_form":"", "notes":"As base word translation is uncertain, so is this compound's."},
+"Kagithli": {"meanings":["goodbye"],"certainty_of_translation":"low","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Githli"], "compound_rule": "prefix + base","base_word": "Githli",  "is_generated": False,"plural_form":"", "notes":"It is just a proposal, I am not sure if it even makes sense. Translation is open for discussion"},
+"Kaivbok":  {"meanings":["resist","defy"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-","Bok"], "compound_rule": "prefix + prefix + base","base_word": "Bok",  "is_generated": False,"plural_form":"", "notes":""},
+"Kamig": {"meanings":["native","local"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["noun","adjective"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Mig"], "compound_rule": "prefix + base","base_word": "Mig",  "is_generated": False,"plural_form":"", "notes":""},
+"Kasho": {"meanings":["discontinuos","variable","less","least"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": [],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Sho"], "compound_rule": "prefix + base","base_word": "Sho",  "is_generated": False,"plural_form":"", "notes":""},
+"Kauu": {"meanings":["finite","temporary","never"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["adjective","noun"],"default_part_of_speech": "ambiguous","is_compound": True, "compound_components": ["Ka-","Uu"], "compound_rule": "prefix + base","base_word": "Uu",  "is_generated": False,"plural_form":"", "notes":""},
+"Voc": {"meanings":["voice"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "Voc",  "is_generated": False,"plural_form":"Voca", "notes":"Extracted from Voca - as game description describes Voca as 'voices/screams' , I deducted that Voc would be singular 'voice/scream'. Additionaly, it gave me an idea for plural noun suffix (-a), which I will use until I find more suitable replacement "},
 
 
 
@@ -55,14 +65,16 @@ known_words = {
 
 }
 
-
+dictionary = {k: known_words[k] for k in sorted(known_words)}
 
 
 #{"meanings":[""],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": [],"default_part_of_speech": "noun","is_compound": True, "compound_components": [], "compound_rule": "prefix + base","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
 
 # suffixes = {
 # "suffixes_productive":{
-#     "-hu": {"meanings": ["of-many","plentiful"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""}
+#     "-hu": {"meanings": ["of-many","plentiful"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
+#   "-a": {"meanings": ["plural noun suffix"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
+#     
 # },    
 
 # "suffixes_speculative":{
@@ -112,7 +124,27 @@ known_words = {
 # }
 # }
 
-# with open("prefixes.json",'w') as pref:
-#     json.dump(prefixes,pref)
-#     pref.close()
+with open("know_words.json",'w') as pref:
+    json.dump(dictionary,pref)
+    pref.close()
 
+# def translate(words):
+#     words_list = words.split()
+#     words_list = [w.capitalize() for w in words_list]
+#     translations = []
+#     for w in words_list:
+#         translation = (known_words[w]["meanings"][0])
+#         translations.append(translation)
+#     translations = " ".join(translations)
+#     return translations
+
+# st.set_page_config(page_title="Voidtongue translator - alfa version",layout = "centered")
+# st.title("Voidtongue translator - alfa version")
+# st.text_input("Text",key="question_input")
+# if st.button("Translate"):
+#     if len(st.session_state["question_input"])>3:
+#         result = translate(st.session_state["question_input"])
+#         st.write("Translation:")
+#         st.write(result)
+#     else:
+#         st.write("Too short input")
