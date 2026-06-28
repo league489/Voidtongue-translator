@@ -58,7 +58,7 @@ known_words = {
 "Kasho": {"meanings":["discontinuos","variable","less","least"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": [],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Sho"], "compound_rule": "prefix + base","base_word": "Sho",  "is_generated": False,"plural_form":"", "notes":""},
 "Kauu": {"meanings":["finite","temporary","never"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["adjective","noun"],"default_part_of_speech": "ambiguous","is_compound": True, "compound_components": ["Ka-","Uu"], "compound_rule": "prefix + base","base_word": "Uu",  "is_generated": False,"plural_form":"", "notes":""},
 "Voc": {"meanings":["voice"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "Voc",  "is_generated": False,"plural_form":"Voca", "notes":"Extracted from Voca - as game description describes Voca as 'voices/screams' , I deducted that Voc would be singular 'voice/scream'. Additionaly, it gave me an idea for plural noun suffix (-a), which I will use until I find more suitable replacement "},
-"Mara":{"meanings":["devil","child"],"certainty_of_translation":"full","source_of_translation":"in-game translation","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Mara":{"meanings":["devil","child"],"certainty_of_translation":"full","source_of_translation":"in-game translation","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "Mara",  "is_generated": False,"plural_form":"Maraa", "notes":""},
 "Ivoth": {"meanings":["give","bestow"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Iv-","Oth"], "compound_rule": "prefix + base","base_word": "Oth",  "is_generated": False,"plural_form":"", "notes":""},
 "Ivmahk": {"meanings":["show","reveal"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Iv-","Mahk"], "compound_rule": "prefix + base","base_word": "Mahk",  "is_generated": False,"plural_form":"", "notes":""},
 "Ivyara": {"meanings":["summon","evoke"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Iv-","Yara"], "compound_rule": "prefix + base","base_word": "Yara",  "is_generated": False,"plural_form":"", "notes":""},
@@ -87,7 +87,12 @@ known_words = {
 "Kaivukul": {"meanings":["expose","unshell"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-","Ukul"], "compound_rule": "prefix + prefix + base","base_word": "Ukul",  "is_generated": False,"plural_form":"", "notes":""},
 "Kaivvome": {"meanings":["disrupt","disorder"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-","Vome"], "compound_rule": "prefix + prefix + base","base_word": "Vome",  "is_generated": False,"plural_form":"", "notes":""},
 "Kaivtarat": {"meanings":["dethrone","depose"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-",], "compound_rule": "prefix + prefix + base","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
-
+"Lohkhu": {"meanings":["many voids","the Void"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Lohk","-hu"], "compound_rule": "base + suffix","base_word": "Lohk",  "is_generated": False,"plural_form":"", "notes":""},
+"Bokhu": {"meanings":["many services","collective servitude","the Service"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Bok","-hu"], "compound_rule": "base + suffix","base_word": "Bok",  "is_generated": False,"plural_form":"", "notes":""},
+"Grikhu":{"meanings":["many strengths", "the Strength"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["-hu"], "compound_rule": "base + suffix","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Vakhu": {"meanings":["many desolations","the Desolation"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Vok","-hu"], "compound_rule": "base + suffix","base_word": "Vok",  "is_generated": False,"plural_form":"", "notes":""},
+"Fasshu": {"meanings":["many chaoses","the Chaos"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Fass","-hu"], "compound_rule": "base + suffix","base_word": "Fass",  "is_generated": False,"plural_form":"", "notes":""},
+""
 
 
 
@@ -116,99 +121,114 @@ known_words = {
 #Dictionary lenght
 #print(len(known_words.keys()))
 
+
+
 #Sort words alphabethicly
 known_words_dictionary = {k: known_words[k] for k in sorted(known_words)}
 
-with open("known_words.json",'w') as kw:
-    json.dump(known_words_dictionary,kw)
-    kw.close()
+# with open("known_words.json",'w') as kw:
+#     json.dump(known_words_dictionary,kw)
+#     kw.close()
 
 #Dictionary item template
-#{"meanings":[""],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-",], "compound_rule": "prefix + prefix + base","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+#{"meanings":[""],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["-hu"], "compound_rule": "base + suffix","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
 
-#Suffixes
-suffixes = {
-"suffixes_productive":{
-    "-hu": {"meanings": ["of-many","plentiful"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
-  "-a": {"meanings": ["plural noun suffix"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":"Extracted from Voca - as game description describes Voca as 'voices/screams' , I deducted that Voc would be singular 'voice/scream'. Additionaly, it gave me an idea for plural noun suffix (-a), which I will use until I find more suitable replacement "},
+# #Suffixes
+# suffixes = {
+# "suffixes_productive":{
+#     "-hu": {"meanings": ["of-many","plentiful"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":"For my understanding, it serves as description of collective concept or expression of plentiness. I may be wrong, thus I set certainty of translation for '-hu' compound words on 'medium'"},
+#   "-a": {"meanings": ["plural noun suffix"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":"Extracted from Voca - as game description describes Voca as 'voices/screams' , I deducted that Voc would be singular 'voice/scream'. Additionaly, it gave me an idea for plural noun suffix (-a), which I will use until I find more suitable replacement "},
     
-},    
+# },    
 
-"suffixes_speculative":{
-    "-un": {"meanings": ["diminutive (?)"],"certainty_of_translation":"medium","source_of_translation":"wiki_official",  "attaches_to": ["noun", "adjective"], "notes":"Contexts of '-un' known usage makes 'dimuitive(?)' meaning low probable "}
-},
-"suffixes_unknown":{
-   "-tra": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
-    "-li": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
-    "-ia": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},  
-}
-}
-with open("suffixes.json",'w') as suff:
-    json.dump(suffixes,suff)
-    suff.close()
+# "suffixes_speculative":{
+#     "-un": {"meanings": ["diminutive (?)"],"certainty_of_translation":"medium","source_of_translation":"wiki_official",  "attaches_to": ["noun", "adjective"], "notes":"Contexts of '-un' known usage makes 'dimuitive(?)' meaning low probable "}
+# },
+# "suffixes_unknown":{
+#    "-tra": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
+#     "-li": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
+#     "-ia": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},  
+# }
+# }
+# with open("suffixes.json",'w') as suff:
+#     json.dump(suffixes,suff)
+#     suff.close()
 
-#Prefixes
-prefixes = {
-"prefixes_productive" :{
-  "Iv-": {"meanings": ["causative marker"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""}, 
-  "Ka-": {"meanings": ["inversion/'un-(X)'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
-  "Sho-": {"meanings": ["Intensifier / 'Greater'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
-  "Uu-": {"meanings": ["Eternal-(X)"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
-},    
+# #Prefixes
+# prefixes = {
+# "prefixes_productive" :{
+#   "Iv-": {"meanings": ["causative marker"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""}, 
+#   "Ka-": {"meanings": ["inversion/'un-(X)'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
+#   "Sho-": {"meanings": ["Intensifier / 'Greater'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
+#   "Uu-": {"meanings": ["Eternal-(X)"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
+# },    
 
-"prefixes_unknown": {
-    "V-": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
-    "Va-": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
-    "Ko-(?)": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning, not confirmed if it even is a prefix"}
-}     
-}
-with open("prefixes.json",'w') as pref:
-    json.dump(prefixes,pref)
-    pref.close()
+# "prefixes_unknown": {
+#     "V-": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
+#     "Va-": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
+#     "Ko-(?)": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning, not confirmed if it even is a prefix"}
+# }     
+# }
+# with open("prefixes.json",'w') as pref:
+#     json.dump(prefixes,pref)
+#     pref.close()
 
-#Conjunctions
-conjunctions = {
-"conjunctions_productive":{
-    "Ra": {"meanings": ["from","out-of"],"certainty_of_translation":"medium","source_of_translation":"wiki_official", "type": "preposition", "structure": "X Ra Y", "notes":"No examples of use"},
-    "Khra": {"meanings": ["the time has come for X"],"certainty_of_translation":"medium","source_of_translation":"wiki_official", "type": "temporal_conjunction","structure": "Khra X", "notes":"No examples of use"}
-},
-"conjunctions_unknown":{
- "Kah": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown", "type": "conjunction", "structure": "X Kah Y", "notes":"Lacks meaning"}   
-}
- }
-with open("conjunctions.json",'w') as con:
-    json.dump(conjunctions,con)
-    con.close()
+# #Conjunctions
+# conjunctions = {
+# "conjunctions_productive":{
+#     "Ra": {"meanings": ["from","out-of"],"certainty_of_translation":"medium","source_of_translation":"wiki_official", "type": "preposition", "structure": "X Ra Y", "notes":"No examples of use"},
+#     "Khra": {"meanings": ["the time has come for X"],"certainty_of_translation":"medium","source_of_translation":"wiki_official", "type": "temporal_conjunction","structure": "Khra X", "notes":"No examples of use"}
+# },
+# "conjunctions_unknown":{
+#  "Kah": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown", "type": "conjunction", "structure": "X Kah Y", "notes":"Lacks meaning"}   
+# }
+#  }
+# with open("conjunctions.json",'w') as con:
+#     json.dump(conjunctions,con)
+#     con.close()
 
-#Pronouns
-pronouns = {
-"pronouns_known":{
-    "Veh": {"meanings": ["I am"],"type": "1st person copula","certainty_of_translation":"high","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":""},
-    "Re-un": {"meanings": ["us","we"],"type": "1st person plural","certainty_of_translation":"high","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":""}
-}
-}
-with open("pronouns.json",'w') as pron:
-    json.dump(pronouns,pron)
-    pron.close()
+# #Pronouns
+# pronouns = {
+# "pronouns_known":{
+#     "Veh": {"meanings": ["I am"],"type": "1st person copula","certainty_of_translation":"high","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":""},
+#     "Re-un": {"meanings": ["us","we"],"type": "1st person plural","certainty_of_translation":"high","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":""}
+# }
+# }
+# with open("pronouns.json",'w') as pron:
+#     json.dump(pronouns,pron)
+#     pron.close()
 
 #Key-based translation prototype
-# def translate(words):
-#     words_list = words.split()
-#     words_list = [w.capitalize() for w in words_list]
-#     translations = []
-#     for w in words_list:
-#         translation = (known_words[w]["meanings"][0])
-#         translations.append(translation)
-#     translations = " ".join(translations)
-#     return translations
+def translate_with_keys(words):
+    words_list = words.split()
+    words_list = [w.capitalize() for w in words_list]
+    translations = []
+    for w in words_list:
+        translation = (known_words[w]["meanings"][0])
+        translations.append(translation)
+    translations = " ".join(translations)
+    return translations
+# Meaning search based translation prototype
+def translate_with_meanings(words):
+    words_list = words.split()
+    translations = []
+    for w in words_list:
+        fetch_m= ([k for k,v in known_words.items() if w in v["meanings"]])[0]
+        translations.append(fetch_m)
+    translations = " ".join(translations)
+    return translations
 
-# st.set_page_config(page_title="Voidtongue translator - alfa version",layout = "centered")
-# st.title("Voidtongue translator - alfa version")
-# st.text_input("Text",key="question_input")
-# if st.button("Translate"):
-#     if len(st.session_state["question_input"])>3:
-#         result = translate(st.session_state["question_input"])
-#         st.write("Translation:")
-#         st.write(result)
-#     else:
-#         st.write("Too short input")
+st.set_page_config(page_title="Voidtongue translator - alfa version",layout = "centered")
+st.title("Voidtongue translator - alfa version")
+st.text_input("Text",key="question_input")
+switch = st.radio("Pick the direction of translation",["Voidtongue => English","English => Voidtongue"],key = "direction_switch")
+if st.button("Translate"):
+    if len(st.session_state["question_input"])>3:
+        if switch == "English => Voidtongue":
+            result = translate_with_meanings(st.session_state["question_input"])
+        else:
+            result = translate_with_keys(st.session_state["question_input"])
+        st.write("Translation:")
+        st.write(result)
+    else:
+        st.write("Too short input")
