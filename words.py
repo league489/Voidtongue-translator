@@ -87,40 +87,64 @@ known_words = {
 "Kaivukul": {"meanings":["expose","unshell"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-","Ukul"], "compound_rule": "prefix + prefix + base","base_word": "Ukul",  "is_generated": False,"plural_form":"", "notes":""},
 "Kaivvome": {"meanings":["disrupt","disorder"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-","Vome"], "compound_rule": "prefix + prefix + base","base_word": "Vome",  "is_generated": False,"plural_form":"", "notes":""},
 "Kaivtarat": {"meanings":["dethrone","depose"],"certainty_of_translation":"high","source_of_translation":"user defined","part_of_speech_tags": ["verb"],"default_part_of_speech": "verb","is_compound": True, "compound_components": ["Ka-","Iv-",], "compound_rule": "prefix + prefix + base","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
-"Lohkhu": {"meanings":["many voids","the Void"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Lohk","-hu"], "compound_rule": "base + suffix","base_word": "Lohk",  "is_generated": False,"plural_form":"", "notes":""},
+"Lohkhu": {"meanings":["many voids","the Voids"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Lohk","-hu"], "compound_rule": "base + suffix","base_word": "Lohk",  "is_generated": False,"plural_form":"", "notes":""},
 "Bokhu": {"meanings":["many services","collective servitude","the Service"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Bok","-hu"], "compound_rule": "base + suffix","base_word": "Bok",  "is_generated": False,"plural_form":"", "notes":""},
 "Grikhu":{"meanings":["many strengths", "the Strength"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["-hu"], "compound_rule": "base + suffix","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
-"Vakhu": {"meanings":["many desolations","the Desolation"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Vok","-hu"], "compound_rule": "base + suffix","base_word": "Vok",  "is_generated": False,"plural_form":"", "notes":""},
+"Vakhu": {"meanings":["many desolations","the Desolation"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Vak","-hu"], "compound_rule": "base + suffix","base_word": "Vak",  "is_generated": False,"plural_form":"", "notes":""},
 "Fasshu": {"meanings":["many chaoses","the Chaos"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Fass","-hu"], "compound_rule": "base + suffix","base_word": "Fass",  "is_generated": False,"plural_form":"", "notes":""},
-""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+"Rishu": {"meanings":["many lights","the Light"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ris","-hu"], "compound_rule": "base + suffix","base_word": "Ris",  "is_generated": False,"plural_form":"", "notes":""},
+"Othhu": {"meanings":["many gifts","the Gift"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Oth","-hu"], "compound_rule": "base + suffix","base_word": "Oth",  "is_generated": False,"plural_form":"", "notes":""},
+"Khrahu": {"meanings":["many times", "ages","epochs","the Time"],"certainty_of_translation":"low","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Khra","-hu"], "compound_rule": "base + suffix","base_word": "Khra",  "is_generated": False,"plural_form":"", "notes":""},
+"Oullhu": {"meanings":["many possibilities","Eternalism(?)","the Possibility"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Oull","-hu"], "compound_rule": "base + suffix","base_word": "Oull",  "is_generated": False,"plural_form":"", "notes":""},
+"Xatahu": {"meanings":["many truths","the Truth"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Xata","-hu"], "compound_rule": "base + suffix","base_word": "Xata",  "is_generated": False,"plural_form":"", "notes":""}, 
+"Ozunhu": {"meanings":["many dusts","the Dust"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ozun","-hu"], "compound_rule": "base + suffix","base_word": "Ozun",  "is_generated": False,"plural_form":"", "notes":""},
+"Vahu": {"meanings":["many claws","the Claw"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Va","-hu"], "compound_rule": "base + suffix","base_word": "Va",  "is_generated": False,"plural_form":"", "notes":""},
+"Rehuhu": {"meanings":["many parts","the Part"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Reh","-hu"], "compound_rule": "base + suffix","base_word": "Reh",  "is_generated": False,"plural_form":"", "notes":""},
+"Vomehu": {"meanings":["many orders","the Order"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Vome","-hu"], "compound_rule": "base + suffix","base_word": "Vome",  "is_generated": False,"plural_form":"", "notes":""},
+"Jahuhu": {"meanings":["many worms","the Worm"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Jahu","-hu"], "compound_rule": "base + suffix","base_word": "Jahu",  "is_generated": False,"plural_form":"", "notes":""},
+"Ukulhu": {"meanings":["many shells","many carapaces","the Shell","the Carapace"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["-hu"], "compound_rule": "base + suffix","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Ranachu": {"meanings":["many filled things","the Filled"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ranac","-hu"], "compound_rule": "base + suffix","base_word": "Ranac",  "is_generated": False,"plural_form":"", "notes":""},
+"Karlohkhu": {"meanings":["many material words","many realms","the Realm"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Lohk","-hu"], "compound_rule": "prefix + base + suffix","base_word": "Lohk",  "is_generated": False,"plural_form":"", "notes":""},
+"Tarathu": {"meanings":["many lords","the Lords"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Tarat","-hu"], "compound_rule": "base + suffix","base_word": "Tarat",  "is_generated": False,"plural_form":"", "notes":""},
+"Karishu": {"meanings":["many darknesses","the Darkness"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Ris","-hu"], "compound_rule": "prefix + base + suffix","base_word": "Ris",  "is_generated": False,"plural_form":"", "notes":""},
+"Vochu": {"meanings":["many voices","the Voice"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Voc","-hu"], "compound_rule": "base + suffix","base_word": "Voc",  "is_generated": False,"plural_form":"", "notes":""},
+"Marahu": {"meanings":["many children","many devils","the Children","the Devils","Tenno(?)"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Mara","-hu"], "compound_rule": "base + suffix","base_word": "Mara",  "is_generated": False,"plural_form":"", "notes":""},
+"Mighu": {"meanings":["many newcomers","the Newcomers"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Mig","-hu"], "compound_rule": "base + suffix","base_word": "Mig",  "is_generated": False,"plural_form":"", "notes":""},
+"Uuhu": {"meanings":["many eternals","the Eternals"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Uu","-hu"], "compound_rule": "base + suffix","base_word": "Uu",  "is_generated": False,"plural_form":"", "notes":""},
+"Kataratahu": {"meanings":["many servants","many subjects","the Servants","the Subjects"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Tarat","-hu"], "compound_rule": "prefix + base + suffix","base_word": "Tarat",  "is_generated": False,"plural_form":"", "notes":""},
+"Kauuhu": {"meanings":["many finite things","the Finite"],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["Ka-","Uu","-hu"], "compound_rule": "prefix + base + suffix","base_word": "Uu",  "is_generated": False,"plural_form":"", "notes":""},
+"Voull": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Vok": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Ne": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Ku(?)": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Noma": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Elu": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Uteh": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Komek": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Vashtav": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Uru": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Zek": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Aba": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Shogrun": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Iire": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Murum": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Vull": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Ilve": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Utu": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Utri": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Ferm(?)": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Iatra": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Lohv": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Tethra": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Jahrak": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Razul": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Nummu": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Kanummu": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+"Ioro": {"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
 }
-#Dictionary lenght
-#print(len(known_words.keys()))
 
+#Dictionary lenght
+print(len(known_words.keys()))
 
 
 #Sort words alphabethicly
@@ -130,8 +154,8 @@ known_words_dictionary = {k: known_words[k] for k in sorted(known_words)}
 #     json.dump(known_words_dictionary,kw)
 #     kw.close()
 
-#Dictionary item template
-#{"meanings":[""],"certainty_of_translation":"medium","source_of_translation":"user defined","part_of_speech_tags": ["noun"],"default_part_of_speech": "noun","is_compound": True, "compound_components": ["-hu"], "compound_rule": "base + suffix","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
+# #Dictionary item template
+# #{"meanings":[""],"certainty_of_translation":"none","source_of_translation":"wiki_unknown","part_of_speech_tags": [],"default_part_of_speech": "","is_compound": False, "compound_components": [], "compound_rule": "","base_word": "",  "is_generated": False,"plural_form":"", "notes":""},
 
 # #Suffixes
 # suffixes = {
@@ -142,7 +166,7 @@ known_words_dictionary = {k: known_words[k] for k in sorted(known_words)}
 # },    
 
 # "suffixes_speculative":{
-#     "-un": {"meanings": ["diminutive (?)"],"certainty_of_translation":"medium","source_of_translation":"wiki_official",  "attaches_to": ["noun", "adjective"], "notes":"Contexts of '-un' known usage makes 'dimuitive(?)' meaning low probable "}
+#     "-un": {"meanings": ["diminutive (?)"],"certainty_of_translation":"low","source_of_translation":"wiki_official",  "attaches_to": ["noun", "adjective"], "notes":"Contexts of '-un' known usage makes 'dimuitive(?)' meaning low probable "}
 # },
 # "suffixes_unknown":{
 #    "-tra": {"meanings": ["?"],"certainty_of_translation":"none","source_of_translation":"wiki_unknown",  "attaches_to": ["noun"], "notes":"Lacks meaning"},
@@ -158,8 +182,8 @@ known_words_dictionary = {k: known_words[k] for k in sorted(known_words)}
 # prefixes = {
 # "prefixes_productive" :{
 #   "Iv-": {"meanings": ["causative marker"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""}, 
-#   "Ka-": {"meanings": ["inversion/'un-(X)'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
-#   "Sho-": {"meanings": ["Intensifier / 'Greater'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
+#   "Ka-": {"meanings": ["inversion/'un-(X)'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun","adjective"], "notes":""},
+#   "Sho-": {"meanings": ["Intensifier / 'Greater'"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun","adjective"], "notes":""},
 #   "Uu-": {"meanings": ["Eternal-(X)"],"certainty_of_translation":"high","source_of_translation":"wiki_official", "attaches_to": ["noun"], "notes":""},
 # },    
 
@@ -191,44 +215,45 @@ known_words_dictionary = {k: known_words[k] for k in sorted(known_words)}
 # pronouns = {
 # "pronouns_known":{
 #     "Veh": {"meanings": ["I am"],"type": "1st person copula","certainty_of_translation":"high","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":""},
-#     "Re-un": {"meanings": ["us","we"],"type": "1st person plural","certainty_of_translation":"high","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":""}
+#     "Re-un": {"meanings": ["us","we"],"type": "1st person plural","certainty_of_translation":"high","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":""},
+#     "Aio-un": {"meanings": ["you","yourself"],"type": "2st person plural","certainty_of_translation":"medium","source_of_translation":"wiki_official", "grammatical_role": "subject","notes":"Assumed based on simillarity to Re-un' and context of usage in 'Ivbok aio-un karis, mara lohk' sentence"}
 # }
 # }
 # with open("pronouns.json",'w') as pron:
 #     json.dump(pronouns,pron)
 #     pron.close()
 
-#Key-based translation prototype
-def translate_with_keys(words):
-    words_list = words.split()
-    words_list = [w.capitalize() for w in words_list]
-    translations = []
-    for w in words_list:
-        translation = (known_words[w]["meanings"][0])
-        translations.append(translation)
-    translations = " ".join(translations)
-    return translations
-# Meaning search based translation prototype
-def translate_with_meanings(words):
-    words_list = words.split()
-    translations = []
-    for w in words_list:
-        fetch_m= ([k for k,v in known_words.items() if w in v["meanings"]])[0]
-        translations.append(fetch_m)
-    translations = " ".join(translations)
-    return translations
+# #Key-based translation prototype
+# def translate_with_keys(words):
+#     words_list = words.split()
+#     words_list = [w.capitalize() for w in words_list]
+#     translations = []
+#     for w in words_list:
+#         translation = (known_words[w]["meanings"][0])
+#         translations.append(translation)
+#     translations = " ".join(translations)
+#     return translations
+# # Meaning search based translation prototype
+# def translate_with_meanings(words):
+#     words_list = words.split()
+#     translations = []
+#     for w in words_list:
+#         fetch_m= ([k for k,v in known_words.items() if w in v["meanings"]])[0]
+#         translations.append(fetch_m)
+#     translations = " ".join(translations)
+#     return translations
 
-st.set_page_config(page_title="Voidtongue translator - alfa version",layout = "centered")
-st.title("Voidtongue translator - alfa version")
-st.text_input("Text",key="question_input")
-switch = st.radio("Pick the direction of translation",["Voidtongue => English","English => Voidtongue"],key = "direction_switch")
-if st.button("Translate"):
-    if len(st.session_state["question_input"])>3:
-        if switch == "English => Voidtongue":
-            result = translate_with_meanings(st.session_state["question_input"])
-        else:
-            result = translate_with_keys(st.session_state["question_input"])
-        st.write("Translation:")
-        st.write(result)
-    else:
-        st.write("Too short input")
+# st.set_page_config(page_title="Voidtongue translator - alfa version",layout = "centered")
+# st.title("Voidtongue translator - alfa version")
+# st.text_input("Text",key="question_input")
+# switch = st.radio("Pick the direction of translation",["Voidtongue => English","English => Voidtongue"],key = "direction_switch")
+# if st.button("Translate"):
+#     if len(st.session_state["question_input"])>3:
+#         if switch == "English => Voidtongue":
+#             result = translate_with_meanings(st.session_state["question_input"])
+#         else:
+#             result = translate_with_keys(st.session_state["question_input"])
+#         st.write("Translation:")
+#         st.write(result)
+#     else:
+#         st.write("Too short input")
